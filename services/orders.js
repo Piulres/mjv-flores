@@ -24,7 +24,7 @@ var OrderService = {
         var orders = this.load();
         var order = _.find(orders, ['id', orderId]);
         if (!order) {
-            return Promise.reject({ error: 'Número do pedido não encontrado' });
+            return Promise.reject({ error: 'Order ID not found' });
         }
 
         if (order.payed) {

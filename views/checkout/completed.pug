@@ -3,10 +3,10 @@ extends ../layout
 block content
   p
     strong
-        | Seu pedido <em>#{order.id}</em> foi processado!
+        | Your order <em>#{order.id}</em> has been processed!
   p
-    | O <strong>#{order.selection.name}</strong> será enviado para <strong>#{order.details.recipient.firstName} #{order.details.recipient.lastName}</strong> com a seguinte nota:
+    | The <strong>#{order.selection.name}</strong> will be sent to <strong>#{order.details.recipient.firstName} #{order.details.recipient.lastName}</strong> with the following note:
   blockquote
       | #{order.details.note}
   p
-    | Obrigado por usar a MJV Flores
+    | Thanks you for using MJV Flores

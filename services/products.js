@@ -4,8 +4,8 @@ var Promise = require('bluebird');
 var allCategories = _.times(5)
     .map(function (i) {
         return {
-            name: 'Flor ' + (i + 1),
-            imageUrl: 'https://placeholdit.imgix.net/~text?txtsize=48&txt=Flor%20' + (i + 1) + '&w=640&h=330'
+            name: 'Flower ' + (i + 1),
+            imageUrl: 'https://placeholdit.imgix.net/~text?txtsize=48&txt=Flower%20' + (i + 1) + '&w=640&h=330'
         };
     });
 

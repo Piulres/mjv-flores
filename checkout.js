@@ -11,12 +11,12 @@ router.get('/', function (req, res, next) {
   // orderId and user address
   var orderId = req.query.orderId;
   var address = botUtils.deserializeAddress(req.query.address);
-  console.log('endereço do usuário é', address);
+  console.log('user address is', address);
 
   orderService.retrieveOrder(orderId).then(function (order) {
     // Check order exists
     if (!order) {
-      throw new Error('Id do pedido não encontrada');
+      throw new Error('Order ID not found');
     }
 
     // Check order if order is already processed
@@ -26,14 +26,14 @@ router.get('/', function (req, res, next) {
 
       // Show completion
       return res.render('checkout/completed', {
-        title: 'MJV Flores - Pedido Processado',
+        title: 'MJV Flores - Order Processed',
         order: order
       });
     }
 
     // Payment form
     return res.render('checkout/index', {
-      title: 'MJV Flores - Pedido de Compra',
+      title: 'MJV Flores - Order Checkout',
       address: req.query.address,
       order: order
     });
@@ -49,7 +49,7 @@ router.post('/', function (req, res, next) {
   // orderId and user address
   var orderId = req.body.orderId;
   var address = botUtils.deserializeAddress(req.body.address);
-  console.log('endereço do usuário é', address);
+  console.log('user address is', address);
 
   // Payment information
   var paymentDetails = {
@@ -65,7 +65,7 @@ router.post('/', function (req, res, next) {
 
     // Show completion
     return res.render('checkout/completed', {
-      title: 'MJV Flores - Pedido Processado',
+      title: 'MJV Flores - Order processed',
       order: processedOrder
     });
 

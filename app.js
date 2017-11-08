@@ -30,7 +30,7 @@ app.post('/api/messages', bot.listen());
 
 // Catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  var err = new Error('Não encontrado');
+  var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
@@ -60,5 +60,5 @@ app.use(function (err, req, res, next) {
 // Start listening
 var port = process.env.port || process.env.PORT || 3978;
 app.listen(port, function () {
-  console.log('Servidor da Web que escuta na porta %s', port);
+  console.log('Web Server listening on port %s', port);
 });

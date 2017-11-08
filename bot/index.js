@@ -25,7 +25,6 @@ var bot = new builder.UniversalBot(connector, function (session) {
         .images([
             new builder.CardImage(session)
                 .url('https://placeholdit.imgix.net/~text?txtsize=56&txt=MJV%20Flores&w=640&h=330')
-                .alt('contoso_flowers')
         ])
         .buttons([
             builder.CardAction.imBack(session, session.gettext(MainOptions.Shop), MainOptions.Shop),
@@ -42,8 +41,7 @@ bot.set('persistConversationData', true);
 // Set default locale
 bot.set('localizerSettings', {
     botLocalePath: './bot/locale',
-    defaultLocale: 'pt'
-    // defaultLocale: 'en'
+    defaultLocale: 'en'
 });
 
 // Sub-Dialogs
