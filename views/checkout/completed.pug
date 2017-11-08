@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  p
+    strong
+        | Seu pedido <em>#{order.id}</em> foi processado!
+  p
+    | O <strong>#{order.selection.name}</strong> será enviado para <strong>#{order.details.recipient.firstName} #{order.details.recipient.lastName}</strong> com a seguinte nota:
+  blockquote
+      | #{order.details.note}
+  p
+    | Obrigado por usar a MJV Flores

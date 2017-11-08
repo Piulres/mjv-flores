@@ -1,0 +1,10 @@
+{
+    "default_address_prompt": "Endereço?",
+    "home_address": "Endereço residencial",
+    "work_address": "Endereço de trabalho",
+    "not_this_time": "Não, obrigado!",
+    "select_billing_address": "Selecione seu endereço de cobrança",
+    "add_new_address": "Adicione um novo endereço",
+    "ask_billing_address": "Qual é o seu endereço de cobrança? Incluir número se necessário.",
+    "ask_save_address": "Você gostaria de salvar este endereço?"
+}
