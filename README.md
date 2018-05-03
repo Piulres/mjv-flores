@@ -5,6 +5,8 @@ console > git clone ; node app.js ;
 
 usefull
 
+botframework-emulator-Setup-3.5.33.exe
+
 npm install --save botbuilder
 
 npm install --save {module}
