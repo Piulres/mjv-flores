@@ -6,8 +6,11 @@ console > git clone ; node app.js ;
 usefull
 
 botframework-emulator-Setup-3.5.33.exe
+
 http://localhost:3978/api/messages
+
 https://dev.botframework.com/bots/settings?id=mjv-bot-test
+
 https://github.com/Microsoft/BotFramework-Emulator/wiki/Getting-Started#connect-to-a-bot-running-on-localhost
 
 npm install --save botbuilder
